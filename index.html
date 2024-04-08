@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./calc.js"  defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <div id="result">
+            <!-- <p id="output"></p> -->
+            <input type="text" id="output">
+        </div>
+
+        <div class="calcBody">
+            <div class="row1">
+                <button class="clear" onclick="clearData()">CLEAR</button>
+                <button class="del" onclick="deleteData()">DEL</button>
+            </div>
+
+            <div class="row2">
+                <button class="number" onclick="displayData(9)">9</button>
+                <button class="number" onclick="displayData(8)">8</button>
+                <button class="number" onclick="displayData(7)">7</button>
+                <button class="operator" onclick="displayData('/')">/</button>
+            </div>
+
+            <div class="row2">
+                <button class="number" onclick="displayData(6)">6</button>
+                <button class="number" onclick="displayData(5)">5</button>
+                <button class="number" onclick="displayData(4)">4</button>
+                <button class="operator" onclick="displayData('*')">*</button>
+            </div>
+
+            <div class="row2">
+                <button class="number" onclick="displayData(3)">3</button>
+                <button class="number" onclick="displayData(2)">2</button>
+                <button class="number" onclick="displayData(1)">1</button>
+                <button class="operator" onclick="displayData('-')">-</button>
+            </div>
+        
+            <div class="row2">
+                <button class="number" onclick="displayData(0)">0</button>
+                <button class="number" onclick="displayData('.')">.</button>
+                <button class="operator" onclick="result()">=</button>
+                <button class="operator" onclick="displayData('+')">+</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
